@@ -218,6 +218,12 @@
   .sticky {
     position: sticky;
   }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .left-40 {
+    left: calc(var(--spacing) * 40);
+  }
   .isolate {
     isolation: isolate;
   }
@@ -852,6 +858,20 @@
       margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .space-x-8 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-30 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 30) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 30) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .space-x-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 1;
@@ -1057,6 +1077,12 @@
   }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
+  }
+  .bg-\[\#eef7fc\] {
+    background-color: #eef7fc;
+  }
+  .bg-\[\#f4f9fc\] {
+    background-color: #f4f9fc;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
